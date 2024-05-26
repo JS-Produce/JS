@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Produce (JS-P)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b2b2b;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #76c7c0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .bio, .services, .portfolio, .contact {
+            margin-bottom: 30px;
+        }
+        .bio h2, .services h2, .portfolio h2, .contact h2 {
+            color: #76c7c0;
+        }
+        .portfolio img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #76c7c0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #76c7c0;
+            color: #1e1e1e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #5aa19f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/JS - P.png" alt="JS-P Logo">
+    </header>
+    <nav>
+        <a href="#bio">Om Meg</a>
+        <a href="#services">Tjenester</a>
+        <a href="#portfolio">Portefølje</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <div class="container">
+        <section id="bio" class="bio">
+            <h2>Om Meg</h2>
+            <p>Hei, jeg heter Jørgen Svartkjønnli, og jeg er en musikkprodusent. Jeg spesialiserer meg på å lage loops, melodier og hele sanger. Hvis du er interessert i å samarbeide, ikke nøl med å ta kontakt!</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Tjenester</h2>
+            <p>Jeg tilbyr følgende tjenester:</p>
+            <ul>
+                <li>Produksjon av loops</li>
+                <li>Skaping av unike melodier</li>
+                <li>Fullstendig sangproduksjon</li>
+            </ul>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2>Portefølje</h2>
+            <p>Her er noen eksempler på arbeidet mitt:</p>
+            <img src="path_to_image1.jpg" alt="Prosjekt 1">
+            <img src="path_to_image2.jpg" alt="Prosjekt 2">
+            <audio controls>
+                <source src="path_to_audio.mp3" type="audio/mpeg">
+                Din nettleser støtter ikke lydavspilleren.
+            </audio>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <p>Interessert i å jobbe sammen? Du kan kontakte meg på:</p>
+            <ul>
+                <li>Email: jorgen@example.com</li>
+                <li>Telefon: +47 123 45 678</li>
+            </ul>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Navn" required>
+                <input type="email" name="email" placeholder="E-post" required>
+                <textarea name="message" rows="5" placeholder="Melding" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jørgen Svartkjønnli - JS-Produce (JS-P)</p>
+    </footer>
+</body>
+</html>
